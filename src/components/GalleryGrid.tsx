@@ -77,11 +77,11 @@ function ZoomView({ item, onClose }: { item: GalleryItem; onClose: () => void })
             <h3 className="text-lg font-bold text-white">{item.title}</h3>
           </div>
           <div className="flex items-center gap-2">
-            <button type="button" onClick={() => zoomBy(-0.25)} className="zoom-btn" aria-label="Zoom out">
+            <button type="button" onClick={() => zoomBy(-0.25)} className="zoom-btn h-11 w-11" aria-label="Zoom out">
               −
             </button>
             <span className="w-12 text-center text-xs tabular-nums text-zinc-400">{Math.round(scale * 100)}%</span>
-            <button type="button" onClick={() => zoomBy(0.25)} className="zoom-btn" aria-label="Zoom in">
+            <button type="button" onClick={() => zoomBy(0.25)} className="zoom-btn h-11 w-11" aria-label="Zoom in">
               +
             </button>
             <button
@@ -105,7 +105,7 @@ function ZoomView({ item, onClose }: { item: GalleryItem; onClose: () => void })
         </div>
         <div
           ref={stageRef}
-          className={`relative h-[72vh] overflow-hidden bg-black ${scale > 1 ? "cursor-grab active:cursor-grabbing" : "cursor-zoom-in"}`}
+          className={`relative h-[52vh] overflow-hidden bg-black sm:h-[72vh] ${scale > 1 ? "cursor-grab active:cursor-grabbing" : "cursor-zoom-in"}`}
           onDoubleClick={() => {
             if (scale === 1) setScale(2);
             else {

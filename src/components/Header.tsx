@@ -88,13 +88,13 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden rounded-md bg-cyan-400 px-4 py-2 text-sm font-semibold text-black shadow-[0_0_20px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300 sm:inline-flex"
+            className="hidden rounded-md bg-cyan-400 px-4 py-2 text-sm font-semibold text-black shadow-[0_0_20px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300 lg:inline-flex"
           >
             Get a free quote
           </Link>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center border border-white/15 lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center border border-white/15 lg:hidden"
             aria-expanded={open}
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}

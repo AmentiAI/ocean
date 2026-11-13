@@ -20,16 +20,16 @@ export function KeywordLanding({ page }: { page: KeywordPage }) {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal>
             <p className="text-xs font-semibold tracking-[0.2em] text-cyan-400 uppercase">{page.primaryKeyword}</p>
-            <h1 className="mt-4 max-w-xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+            <h1 className="mt-4 max-w-xl text-3xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
               {page.h1}
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-zinc-400">{page.lead}</p>
             <p className="mt-4 text-sm text-zinc-500">{page.market}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/contact" variant="primary">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button href="/contact" variant="primary" className="w-full sm:w-auto">
                 Book a strategy call
               </Button>
-              <Button href="/pricing" variant="secondary">
+              <Button href="/pricing" variant="secondary" className="w-full sm:w-auto">
                 View pricing
               </Button>
             </div>

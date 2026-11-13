@@ -51,7 +51,7 @@ export function BrandLockup() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.12),transparent_45%)]" />
         <p
           key={current.title}
-          className="relative text-6xl font-bold leading-[0.9] tracking-tight text-white sm:text-7xl"
+          className="relative text-5xl font-bold leading-[0.9] tracking-tight text-white sm:text-7xl"
           style={{ animation: "brand-rise 0.5s ease both" }}
         >
           {current.title}

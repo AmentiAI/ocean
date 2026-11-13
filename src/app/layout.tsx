@@ -66,7 +66,7 @@ const orgJsonLd = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-black text-white">
+      <body className="flex min-h-full flex-col overflow-x-hidden bg-black text-white">
         <JsonLd data={orgJsonLd} />
         <Header />
         <main className="flex-1">{children}</main>

@@ -30,7 +30,7 @@ export function Logo({
         width={320}
         height={84}
         priority
-        className="h-12 w-auto sm:h-14"
+        className="h-9 w-auto max-w-[9.5rem] object-contain sm:h-12 sm:max-w-none lg:h-14"
       />
     </Link>
   );

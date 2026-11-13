@@ -96,7 +96,7 @@ export default function HomePage() {
           </div>
 
           <Reveal>
-            <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
+            <h1 className="mt-8 max-w-5xl text-[2.35rem] font-bold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-8xl">
               We Make Brands
               <span className="mt-2 block">Dominate Google</span>
             </h1>
@@ -116,24 +116,24 @@ export default function HomePage() {
                 Island, Connecticut, Massachusetts, and New England. Across reviewed local-business engagements,
                 clients average roughly 4× organic traffic growth within 90 days.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Button href="/contact" variant="primary">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Button href="/contact" variant="primary" className="w-full sm:w-auto">
                   Start Growing Today
                 </Button>
-                <Button href="/contact" variant="secondary">
+                <Button href="/contact" variant="secondary" className="w-full sm:w-auto">
                   Book Free Call
                 </Button>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6 lg:border-t-0 lg:pt-0">
+            <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6 sm:gap-4 lg:border-t-0 lg:pt-0">
               <div>
-                <p className="text-3xl font-bold text-white sm:text-4xl">
+                <p className="text-2xl font-bold text-white sm:text-4xl">
                   <CountUp value={150} suffix="+" />
                 </p>
                 <p className="mt-1 text-[10px] font-semibold tracking-[0.14em] text-zinc-500 uppercase">Clients</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-cyan-400 sm:text-4xl">
+                <p className="text-2xl font-bold text-cyan-400 sm:text-4xl">
                   <CountUp value={400} suffix="%" />
                 </p>
                 <p className="mt-1 text-[10px] font-semibold tracking-[0.14em] text-zinc-500 uppercase">
@@ -141,7 +141,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-white sm:text-4xl">
+                <p className="text-2xl font-bold text-white sm:text-4xl">
                   <CountUp value={90} suffix="d" />
                 </p>
                 <p className="mt-1 text-[10px] font-semibold tracking-[0.14em] text-zinc-500 uppercase">
@@ -157,7 +157,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-6 sm:py-28">
         <p className="text-xs font-semibold tracking-[0.2em] text-cyan-400 uppercase">What we do</p>
-        <h2 className="mt-4 text-5xl font-bold tracking-tight text-white sm:text-7xl">
+        <h2 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
           Digital <span className="outline-text">Dominance</span>
         </h2>
         <div className="mt-16 space-y-16">

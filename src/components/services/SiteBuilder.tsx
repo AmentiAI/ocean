@@ -33,7 +33,7 @@ export function SiteBuilder() {
         <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
         <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
         <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-        <span className="ml-3 text-xs text-zinc-500">oceanstatemarketing.com — {current.label}</span>
+        <span className="ml-2 min-w-0 truncate text-xs text-zinc-500">oceanstatemarketing.com — {current.label}</span>
       </div>
       <div className="grid gap-4 p-5 sm:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-2">
